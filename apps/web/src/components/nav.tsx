@@ -9,6 +9,7 @@ const groups: { title: string; items: { href: string; label: string; badge?: num
     { href: '/transcripts', label: 'Transcripts' },
   ] },
   { title: 'Pipeline', items: [
+    { href: '/pipeline', label: 'Deal Pipeline' },
     { href: '/approvals', label: 'Approvals', badge: 3 },
     { href: '/opportunities', label: 'Opportunities' },
     { href: '/contacts', label: 'Contacts' },
