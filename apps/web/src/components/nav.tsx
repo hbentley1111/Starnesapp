@@ -35,7 +35,7 @@ const groups: { title: string; items: { href: string; label: string; icon: keyof
     { href: '/approvals', label: 'Approvals', icon: 'check', badge: 3 },
     { href: '/opportunities', label: 'Opportunities', icon: 'target' },
     { href: '/contacts', label: 'Contacts', icon: 'users' },
-    { href: '/properties', label: 'Properties', icon: 'bldg' },
+    { href: '/properties', label: 'Property Search', icon: 'bldg' },
     { href: '/cadences', label: 'Cadences', icon: 'clock' },
   ] },
   { title: 'Intake', items: [

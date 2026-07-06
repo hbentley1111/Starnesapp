@@ -60,3 +60,10 @@ export interface PipelineDeal {
   id: string; title: string; address: string | null; assetClass: string | null;
   submarket: string | null; stage: string; value: number | null; ageDays: number; contact: string | null;
 }
+
+export interface PropertyResult {
+  id: string; address: string; city: string | null; state: string | null; zip: string | null;
+  county: string | null; propertyType: string | null; squareFootage: number | null;
+  lastSaleDate: string | null; lastSalePrice: number | null; ownerName: string | null;
+}
+export interface PropertySearchResponse { source: 'rentcast' | 'sample'; results: PropertyResult[] }

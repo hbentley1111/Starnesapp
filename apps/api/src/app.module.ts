@@ -14,6 +14,7 @@ import { HitlGatewayModule } from './modules/hitl-gateway/hitl-gateway.module';
 import { AgentOrchestrationModule } from './modules/agent-orchestration/agent-orchestration.module';
 import { NotificationsModule } from './modules/notifications/notifications.module';
 import { MigrationModule } from './modules/migration/migration.module';
+import { MarketDataModule } from './modules/market-data/market-data.module';
 
 /**
  * Modular Monolith — twelve enforced module seams (§2.2):
@@ -39,6 +40,7 @@ import { MigrationModule } from './modules/migration/migration.module';
     AgentOrchestrationModule,
     NotificationsModule,
     MigrationModule,
+    MarketDataModule,
   ],
 })
 export class AppModule {}
