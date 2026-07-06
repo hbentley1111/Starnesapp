@@ -1,9 +1,43 @@
-/* Starnes design tokens — dark-first (client-requested), light stays a cheap toggle.
-   Signature: "ledger figures" — quantitative values render in mono + brass. */
+/* Starnes design tokens — light-first premium (matches the client reference mockup).
+   Warm-white content surfaces, gold/brass accents, a dark navy sidebar rail.
+   Signature: "ledger figures" — quantitative values render in mono + brass.
+   Dark mode is retained as a toggle via [data-theme='dark']. */
 :root {
   --font-ui: "Instrument Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
   --font-ledger: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   --font-display: Georgia, "Times New Roman", serif;
+
+  /* light content surfaces */
+  --bg: #f4f5f7;
+  --surface-1: #ffffff;
+  --surface-2: #f8f9fb;
+  --border: #e6e8ec;
+  --border-strong: #d3d7dd;
+  --text-1: #1a2231;
+  --text-2: #5a6577;
+  --text-3: #8b94a3;
+
+  /* dark navy sidebar rail (constant across themes) */
+  --rail-bg: #131c2b;
+  --rail-surface: #1c2739;
+  --rail-border: #26344a;
+  --rail-text-1: #e8ecf2;
+  --rail-text-2: #94a2b8;
+  --rail-text-3: #61708a;
+
+  --accent: #4f8a7f;
+  --accent-tint: rgba(79, 138, 127, 0.11);
+  --brass: #b8893b;
+  --brass-tint: rgba(184, 137, 59, 0.12);
+  --danger: #c0503f;
+  --danger-tint: rgba(192, 80, 63, 0.10);
+  --warning: #c07d1e;
+  --warning-tint: rgba(192, 125, 30, 0.12);
+  --success: #4f8a4a;
+  --success-tint: rgba(79, 138, 74, 0.12);
+  --radius: 8px;
+}
+:root[data-theme='dark'] {
   --bg: #0f1622;
   --surface-1: #16202f;
   --surface-2: #1c2838;
@@ -12,28 +46,14 @@
   --text-1: #e8ecf2;
   --text-2: #97a6bb;
   --text-3: #64748b;
+  --rail-bg: #0b111b;
+  --rail-surface: #16202f;
+  --rail-border: #22303f;
+  --rail-text-1: #e8ecf2;
+  --rail-text-2: #97a6bb;
+  --rail-text-3: #64748b;
   --accent: #7fb8ad;
-  --accent-tint: rgba(111, 175, 165, 0.13);
   --brass: #d4af6a;
-  --brass-tint: rgba(201, 169, 97, 0.12);
-  --danger: #d26a5c;
-  --danger-tint: rgba(210, 106, 92, 0.13);
-  --warning: #d9973b;
-  --warning-tint: rgba(217, 151, 59, 0.14);
-  --success: #86b87e;
-  --success-tint: rgba(134, 184, 126, 0.13);
-  --radius: 8px;
-}
-:root[data-theme='light'] {
-  --bg: #f5f4f0;
-  --surface-1: #ffffff;
-  --surface-2: #faf9f6;
-  --border: #e3e1d8;
-  --border-strong: #cfcdc2;
-  --text-1: #23231f;
-  --text-2: #5d5b52;
-  --text-3: #8f8d82;
-  --accent-tint: rgba(111, 175, 165, 0.16);
 }
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
@@ -62,6 +82,7 @@ button { font: inherit; }
   background: var(--surface-1);
   border: 1px solid var(--border);
   border-radius: 12px;
+  box-shadow: 0 1px 2px rgba(20, 30, 50, 0.04);
 }
 .chip {
   display: inline-flex;
@@ -84,12 +105,12 @@ button { font: inherit; }
 }
 .btn:hover { background: var(--surface-2); }
 .btn:active { transform: scale(0.98); }
-.btn-accent { border-color: var(--accent); color: var(--accent); }
-.btn-accent:hover { background: var(--accent-tint); }
+.btn-accent { border-color: var(--accent); color: var(--accent); background: var(--accent-tint); }
+.btn-accent:hover { background: var(--accent); color: #fff; }
 .btn-danger { border-color: var(--danger); color: var(--danger); }
 .btn-danger:hover { background: var(--danger-tint); }
 input[type='text'], input[type='search'], textarea {
-  background: var(--surface-2);
+  background: var(--surface-1);
   border: 1px solid var(--border);
   color: var(--text-1);
   border-radius: var(--radius);

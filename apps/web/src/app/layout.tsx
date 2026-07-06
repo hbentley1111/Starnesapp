@@ -10,7 +10,7 @@ export const metadata = { title: 'Starnes RE Advisors' };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" data-theme="dark">
+    <html lang="en" data-theme="light">
       <body>
         <Providers>
         <div style={{ display: 'grid', gridTemplateColumns: '218px minmax(0,1fr)', minHeight: '100vh' }}>
