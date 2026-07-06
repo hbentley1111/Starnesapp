@@ -3,17 +3,18 @@
 :root {
   --font-ui: "Instrument Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
   --font-ledger: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
-  --bg: #131311;
-  --surface-1: #1b1b18;
-  --surface-2: #222220;
-  --border: #2c2c27;
-  --border-strong: #3a3a33;
-  --text-1: #e9e7df;
-  --text-2: #a5a297;
-  --text-3: #716f65;
-  --accent: #6fafa5;
+  --font-display: Georgia, "Times New Roman", serif;
+  --bg: #0f1622;
+  --surface-1: #16202f;
+  --surface-2: #1c2838;
+  --border: #263447;
+  --border-strong: #34455c;
+  --text-1: #e8ecf2;
+  --text-2: #97a6bb;
+  --text-3: #64748b;
+  --accent: #7fb8ad;
   --accent-tint: rgba(111, 175, 165, 0.13);
-  --brass: #c9a961;
+  --brass: #d4af6a;
   --brass-tint: rgba(201, 169, 97, 0.12);
   --danger: #d26a5c;
   --danger-tint: rgba(210, 106, 92, 0.13);
@@ -47,6 +48,11 @@ body {
 a { color: inherit; text-decoration: none; }
 button { font: inherit; }
 
+.display {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
 .figure {
   font-family: var(--font-ledger), monospace;
   color: var(--brass);

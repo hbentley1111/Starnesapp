@@ -20,8 +20,9 @@ export function Nav() {
   const path = usePathname();
   return (
     <nav style={{ borderRight: '1px solid var(--border)', padding: '20px 12px', position: 'sticky', top: 0, height: '100vh' }}>
-      <div style={{ padding: '0 10px 18px', fontWeight: 600, letterSpacing: '0.02em' }}>
-        Starnes <span style={{ color: 'var(--brass)' }}>RE</span>
+      <div style={{ padding: '2px 10px 18px' }}>
+        <div className="display" style={{ fontSize: 15, color: 'var(--text-1)' }}>Starnes <span style={{ color: 'var(--brass)' }}>Real Estate</span></div>
+        <div style={{ fontSize: 9.5, color: 'var(--text-3)', textTransform: 'uppercase', letterSpacing: '0.12em', marginTop: 2 }}>Stewards of Property</div>
       </div>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
         {items.map((item) => {

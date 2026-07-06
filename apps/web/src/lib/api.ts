@@ -51,3 +51,12 @@ export const ago = (iso: string | null) => {
 };
 
 export interface CaptureResult { interactionId: string; deduped: boolean; fields: number; needsReview: number }
+
+export interface PriorityAction {
+  id: string; contact: string; company: string | null; opportunity: string | null;
+  status: 'due' | 'overdue'; daysOverdue: number; action: 'Call' | 'Email';
+}
+export interface PipelineDeal {
+  id: string; title: string; address: string | null; assetClass: string | null;
+  submarket: string | null; stage: string; value: number | null; ageDays: number; contact: string | null;
+}
