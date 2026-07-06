@@ -49,3 +49,5 @@ export const ago = (iso: string | null) => {
   const days = Math.floor((Date.now() - new Date(iso).getTime()) / 86_400_000);
   return days <= 0 ? 'today' : `${days}d ago`;
 };
+
+export interface CaptureResult { interactionId: string; deduped: boolean; fields: number; needsReview: number }
