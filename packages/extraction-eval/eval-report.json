@@ -1,0 +1,234 @@
+{
+  "report": {
+    "totals": {
+      "tp": 14,
+      "fp": 1,
+      "fn": 1,
+      "tn": 6
+    },
+    "precision": 0.9333333333333333,
+    "recall": 0.9333333333333333,
+    "passPrecision": true,
+    "passRecall": true,
+    "perField": {
+      "contact": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1
+      },
+      "company": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1
+      },
+      "property": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.5,
+        "recall": 0.5
+      },
+      "intent": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1
+      },
+      "opportunity_type": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1
+      },
+      "opportunity_stage_or_timeline": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1
+      },
+      "next_actions": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1
+      }
+    },
+    "calibration": {
+      "autoCommitBand": {
+        "n": 12,
+        "correct": 12,
+        "accuracy": 1
+      },
+      "reviewBand": {
+        "n": 3,
+        "correct": 2,
+        "accuracy": 0.6666666666666666
+      },
+      "autoCommitMeetsBar": true
+    }
+  },
+  "outcomes": [
+    {
+      "goldId": "001_clean_dictation",
+      "fieldKey": "contact",
+      "outcome": "tp",
+      "confidence": 0.95,
+      "matched": true
+    },
+    {
+      "goldId": "001_clean_dictation",
+      "fieldKey": "company",
+      "outcome": "tp",
+      "confidence": 0.94,
+      "matched": true
+    },
+    {
+      "goldId": "001_clean_dictation",
+      "fieldKey": "property",
+      "outcome": "tp",
+      "confidence": 0.9,
+      "matched": true
+    },
+    {
+      "goldId": "001_clean_dictation",
+      "fieldKey": "intent",
+      "outcome": "tp",
+      "confidence": 0.92,
+      "matched": true
+    },
+    {
+      "goldId": "001_clean_dictation",
+      "fieldKey": "opportunity_type",
+      "outcome": "tp",
+      "confidence": 0.9,
+      "matched": true
+    },
+    {
+      "goldId": "001_clean_dictation",
+      "fieldKey": "opportunity_stage_or_timeline",
+      "outcome": "tp",
+      "confidence": 0.88,
+      "matched": true
+    },
+    {
+      "goldId": "001_clean_dictation",
+      "fieldKey": "next_actions",
+      "outcome": "tp",
+      "confidence": 0.93,
+      "matched": true
+    },
+    {
+      "goldId": "001_clean_dictation",
+      "fieldKey": "next_actions",
+      "outcome": "tp",
+      "confidence": 0.9,
+      "matched": true
+    },
+    {
+      "goldId": "002_messy_multiparty",
+      "fieldKey": "contact",
+      "outcome": "tp",
+      "confidence": 0.85,
+      "matched": true
+    },
+    {
+      "goldId": "002_messy_multiparty",
+      "fieldKey": "company",
+      "outcome": "tp",
+      "confidence": 0.6,
+      "matched": true
+    },
+    {
+      "goldId": "002_messy_multiparty",
+      "fieldKey": "property",
+      "outcome": "fp",
+      "confidence": 0.55,
+      "matched": false
+    },
+    {
+      "goldId": "002_messy_multiparty",
+      "fieldKey": "property",
+      "outcome": "fn",
+      "confidence": null,
+      "matched": false
+    },
+    {
+      "goldId": "002_messy_multiparty",
+      "fieldKey": "intent",
+      "outcome": "tp",
+      "confidence": 0.8,
+      "matched": true
+    },
+    {
+      "goldId": "002_messy_multiparty",
+      "fieldKey": "opportunity_type",
+      "outcome": "tp",
+      "confidence": 0.8,
+      "matched": true
+    },
+    {
+      "goldId": "002_messy_multiparty",
+      "fieldKey": "opportunity_stage_or_timeline",
+      "outcome": "tp",
+      "confidence": 0.7,
+      "matched": true
+    },
+    {
+      "goldId": "002_messy_multiparty",
+      "fieldKey": "next_actions",
+      "outcome": "tp",
+      "confidence": 0.9,
+      "matched": true
+    },
+    {
+      "goldId": "003_low_signal",
+      "fieldKey": "contact",
+      "outcome": "tn",
+      "confidence": null,
+      "matched": true
+    },
+    {
+      "goldId": "003_low_signal",
+      "fieldKey": "company",
+      "outcome": "tn",
+      "confidence": null,
+      "matched": true
+    },
+    {
+      "goldId": "003_low_signal",
+      "fieldKey": "property",
+      "outcome": "tn",
+      "confidence": null,
+      "matched": true
+    },
+    {
+      "goldId": "003_low_signal",
+      "fieldKey": "intent",
+      "outcome": "tn",
+      "confidence": null,
+      "matched": true
+    },
+    {
+      "goldId": "003_low_signal",
+      "fieldKey": "opportunity_type",
+      "outcome": "tn",
+      "confidence": null,
+      "matched": true
+    },
+    {
+      "goldId": "003_low_signal",
+      "fieldKey": "opportunity_stage_or_timeline",
+      "outcome": "tn",
+      "confidence": null,
+      "matched": true
+    }
+  ]
+}

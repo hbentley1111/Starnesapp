@@ -1,0 +1,18 @@
+{
+  "id": "001_clean_dictation",
+  "category": "clean",
+  "transcript": "Quick note after my call. I just spoke with Dana Whitfield over at Apex Logistics, her email is dana@apexlogistics.com and cell is 704-555-0142. They are outgrowing their space on Westinghouse and she needs about forty thousand square feet of warehouse, a lease, ideally within six months. The building at 4120 Old Charlotte Highway could work, it's industrial, right size. Two things for me: send her three warehouse options by Friday July tenth, and get a site tour on the calendar for next week.",
+  "expected": {
+    "contact": { "value": { "full_name": "Dana Whitfield", "emails": ["dana@apexlogistics.com"], "phones": ["704-555-0142"] } },
+    "company": { "value": { "name": "Apex Logistics" } },
+    "property": { "value": { "address": "4120 Old Charlotte Highway", "asset_class": "industrial" } },
+    "intent": { "value": "needs ~40,000 sqft warehouse lease within six months" },
+    "opportunity_type": { "value": "tenant_requirement" },
+    "opportunity_stage_or_timeline": { "value": "within six months" },
+    "next_actions": [
+      { "value": { "description": "send three warehouse options", "due_date": "2026-07-10" } },
+      { "value": { "description": "schedule site tour", "due_date": null } }
+    ]
+  },
+  "notes": "Happy-path founder dictation; every field grounded and unambiguous."
+}

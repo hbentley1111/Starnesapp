@@ -1,0 +1,49 @@
+[
+  {
+    "id": "001_clean_dictation",
+    "model_id": "claude-sonnet-4-6",
+    "prompt_version": "extraction@v1",
+    "prediction": {
+      "contact": { "value": { "full_name": "Dana Whitfield", "emails": ["dana@apexlogistics.com"], "phones": ["7045550142"] }, "source_offset": { "start": 40, "end": 140 }, "confidence": 0.95 },
+      "company": { "value": { "name": "Apex Logistics" }, "source_offset": { "start": 64, "end": 90 }, "confidence": 0.94 },
+      "property": { "value": { "address": "4120 Old Charlotte Highway", "asset_class": "industrial" }, "source_offset": { "start": 260, "end": 330 }, "confidence": 0.9 },
+      "intent": { "value": "Needs ~40,000 sqft warehouse lease within six months", "source_offset": { "start": 150, "end": 250 }, "confidence": 0.92 },
+      "opportunity_type": { "value": "tenant_requirement", "source_offset": { "start": 150, "end": 250 }, "confidence": 0.9 },
+      "opportunity_stage_or_timeline": { "value": "within six months", "source_offset": { "start": 200, "end": 240 }, "confidence": 0.88 },
+      "next_actions": [
+        { "value": { "description": "Send three warehouse options", "due_date": "2026-07-10" }, "source_offset": { "start": 340, "end": 410 }, "confidence": 0.93 },
+        { "value": { "description": "Schedule site tour", "due_date": null }, "source_offset": { "start": 410, "end": 470 }, "confidence": 0.9 }
+      ]
+    }
+  },
+  {
+    "id": "002_messy_multiparty",
+    "model_id": "claude-sonnet-4-6",
+    "prompt_version": "extraction@v1",
+    "prediction": {
+      "contact": { "value": { "full_name": "Marcus Bell", "emails": [], "phones": [] }, "source_offset": { "start": 170, "end": 200 }, "confidence": 0.85 },
+      "company": { "value": { "name": "Bell Family Holdings" }, "source_offset": { "start": 220, "end": 270 }, "confidence": 0.6 },
+      "property": { "value": { "address": "271 South Tryon", "asset_class": "office" }, "source_offset": { "start": 60, "end": 110 }, "confidence": 0.55 },
+      "intent": { "value": "Owner considering selling in 12-18 months", "source_offset": { "start": 280, "end": 360 }, "confidence": 0.8 },
+      "opportunity_type": { "value": "owner_intel", "source_offset": { "start": 280, "end": 360 }, "confidence": 0.8 },
+      "opportunity_stage_or_timeline": { "value": "12-18 months", "source_offset": { "start": 300, "end": 340 }, "confidence": 0.7 },
+      "next_actions": [
+        { "value": { "description": "Circle back with Marcus in September", "due_date": null }, "source_offset": { "start": 480, "end": 530 }, "confidence": 0.9 }
+      ]
+    }
+  },
+  {
+    "id": "003_low_signal",
+    "model_id": "claude-sonnet-4-6",
+    "prompt_version": "extraction@v1",
+    "prediction": {
+      "contact": null,
+      "company": null,
+      "property": null,
+      "intent": null,
+      "opportunity_type": null,
+      "opportunity_stage_or_timeline": null,
+      "next_actions": []
+    }
+  }
+]

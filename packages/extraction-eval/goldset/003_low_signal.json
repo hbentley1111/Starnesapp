@@ -1,0 +1,15 @@
+{
+  "id": "003_low_signal",
+  "category": "low_signal",
+  "transcript": "SPEAKER 1: Hey, quick one - did the county portal come back up? SPEAKER 2: Yeah, this morning. SPEAKER 1: Great, and the parking ratio question, was that four per thousand? SPEAKER 2: Correct, four per thousand. SPEAKER 1: Perfect, that's all I needed. Talk soon.",
+  "expected": {
+    "contact": null,
+    "company": null,
+    "property": null,
+    "intent": null,
+    "opportunity_type": null,
+    "opportunity_stage_or_timeline": null,
+    "next_actions": []
+  },
+  "notes": "Quick clarification call (~60% of real volume). Correct extraction is NOTHING — this record punishes fabrication."
+}

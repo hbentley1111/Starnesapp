@@ -1,0 +1,16 @@
+{
+  "name": "starnes",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "typecheck": "npm run build -w @starnes/shared && npm run typecheck -w @starnes/api",
+    "lint": "eslint apps packages --ext .ts,.tsx",
+    "db:migrate": "npm run db:migrate -w @starnes/api"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

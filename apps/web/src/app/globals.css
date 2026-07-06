@@ -1,0 +1,95 @@
+/* Starnes design tokens — dark-first (client-requested), light stays a cheap toggle.
+   Signature: "ledger figures" — quantitative values render in mono + brass. */
+:root {
+  --font-ui: "Instrument Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-ledger: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --bg: #131311;
+  --surface-1: #1b1b18;
+  --surface-2: #222220;
+  --border: #2c2c27;
+  --border-strong: #3a3a33;
+  --text-1: #e9e7df;
+  --text-2: #a5a297;
+  --text-3: #716f65;
+  --accent: #6fafa5;
+  --accent-tint: rgba(111, 175, 165, 0.13);
+  --brass: #c9a961;
+  --brass-tint: rgba(201, 169, 97, 0.12);
+  --danger: #d26a5c;
+  --danger-tint: rgba(210, 106, 92, 0.13);
+  --warning: #d9973b;
+  --warning-tint: rgba(217, 151, 59, 0.14);
+  --success: #86b87e;
+  --success-tint: rgba(134, 184, 126, 0.13);
+  --radius: 8px;
+}
+:root[data-theme='light'] {
+  --bg: #f5f4f0;
+  --surface-1: #ffffff;
+  --surface-2: #faf9f6;
+  --border: #e3e1d8;
+  --border-strong: #cfcdc2;
+  --text-1: #23231f;
+  --text-2: #5d5b52;
+  --text-3: #8f8d82;
+  --accent-tint: rgba(111, 175, 165, 0.16);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--text-1);
+  font-family: var(--font-ui), system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+button { font: inherit; }
+
+.figure {
+  font-family: var(--font-ledger), monospace;
+  color: var(--brass);
+  font-variant-numeric: tabular-nums;
+}
+.card {
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11.5px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.btn {
+  background: transparent;
+  border: 1px solid var(--border-strong);
+  color: var(--text-1);
+  border-radius: var(--radius);
+  padding: 5px 12px;
+  font-size: 12.5px;
+  cursor: pointer;
+  transition: background 120ms ease;
+}
+.btn:hover { background: var(--surface-2); }
+.btn:active { transform: scale(0.98); }
+.btn-accent { border-color: var(--accent); color: var(--accent); }
+.btn-accent:hover { background: var(--accent-tint); }
+.btn-danger { border-color: var(--danger); color: var(--danger); }
+.btn-danger:hover { background: var(--danger-tint); }
+input[type='text'], input[type='search'], textarea {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--text-1);
+  border-radius: var(--radius);
+  padding: 6px 10px;
+  font: inherit;
+  outline: none;
+}
+input:focus, textarea:focus { border-color: var(--accent); }
+::placeholder { color: var(--text-3); }

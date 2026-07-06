@@ -1,0 +1,12 @@
+{
+  "name": "@starnes/extraction-eval",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "eval": "tsx src/run-eval.ts",
+    "eval:mock": "tsx src/run-eval.ts --predictions fixtures/predictions.sample.json"
+  },
+  "dependencies": { "@starnes/shared": "*", "zod": "^3.23.8" },
+  "devDependencies": { "@types/node": "^22.5.0", "tsx": "^4.19.0", "typescript": "^5.6.0" }
+}

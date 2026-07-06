@@ -1,0 +1,23 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: pgvector/pgvector:pg16
+        env: { POSTGRES_USER: starnes, POSTGRES_PASSWORD: starnes, POSTGRES_DB: starnes }
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U starnes" --health-interval 5s --health-timeout 5s --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm run db:migrate -w @starnes/api
+        env: { DATABASE_URL: "postgres://starnes:starnes@localhost:5432/starnes" }
+      - run: npm run eval:mock -w @starnes/extraction-eval   # harness sanity gate (offline; live gold-set eval runs pre-merge on prompt changes)
+      - run: npm audit --audit-level=high || true

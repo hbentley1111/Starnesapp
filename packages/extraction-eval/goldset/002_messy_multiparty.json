@@ -1,0 +1,17 @@
+{
+  "id": "002_messy_multiparty",
+  "category": "messy_multiparty",
+  "transcript": "SPEAKER 1: ...so like I was saying the Tryon building-- SPEAKER 3: sorry you cut out. SPEAKER 1: the one at 217 South Tryon, the office tower. Marcus, you and the family have held that what, twenty years? SPEAKER 2 (Marcus Bell): Longer. Look, between us, Bell Family Holdings is not going to keep it forever. My sister wants out. I'd say twelve, eighteen months we start seriously looking at selling. SPEAKER 1: [crosstalk] --understood, not going anywhere. SPEAKER 3: was that eighteen or eighty? bad line. SPEAKER 2: Eighteen. Months. SPEAKER 1: Okay. I'll circle back with you in September, quietly.",
+  "expected": {
+    "contact": { "value": { "full_name": "Marcus Bell", "emails": [], "phones": [] } },
+    "company": { "value": { "name": "Bell Family Holdings" } },
+    "property": { "value": { "address": "217 South Tryon", "asset_class": "office" } },
+    "intent": { "value": "owner considering selling in 12-18 months" },
+    "opportunity_type": { "value": "owner_intel" },
+    "opportunity_stage_or_timeline": { "value": "12-18 months" },
+    "next_actions": [
+      { "value": { "description": "circle back with Marcus in September", "due_date": null } }
+    ]
+  },
+  "notes": "Crosstalk, mis-heard figures (eighteen vs eighty), speaker attribution noise. Classic owner-intel capture — NOT a deal yet."
+}
