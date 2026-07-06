@@ -15,6 +15,7 @@ import { AgentOrchestrationModule } from './modules/agent-orchestration/agent-or
 import { NotificationsModule } from './modules/notifications/notifications.module';
 import { MigrationModule } from './modules/migration/migration.module';
 import { MarketDataModule } from './modules/market-data/market-data.module';
+import { HealthController } from './health.controller';
 
 /**
  * Modular Monolith — twelve enforced module seams (§2.2):
@@ -42,5 +43,6 @@ import { MarketDataModule } from './modules/market-data/market-data.module';
     MigrationModule,
     MarketDataModule,
   ],
+  controllers: [HealthController],
 })
 export class AppModule {}
